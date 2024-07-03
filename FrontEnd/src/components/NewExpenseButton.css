@@ -1,0 +1,32 @@
+.add-invoice-btn {
+    height: 3.125rem;
+    min-width: 6.25rem;
+    background-color: #7c5df9;
+    border-radius: 0.5rem;
+    position: relative;
+    padding: 0.5625rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.add-invoice-btn > .circle {
+    top: calc((3.125rem / 2) - (2rem / 2));
+    left: calc((3.125rem / 2) - (2rem / 2));
+}
+
+.add-invoice-btn > .circle > img {
+    height: 0.625rem;
+}
+
+.add-invoice-btn > h2 {
+    margin: 0.5rem;
+    margin-left: calc((3.125rem / 2) - (2rem / 2) + 2rem);
+    font-weight: 500;
+}
+
+@media screen and (min-width: 576px) {
+    .add-invoice-btn {
+        margin-left: 0.5rem;
+    }
+}

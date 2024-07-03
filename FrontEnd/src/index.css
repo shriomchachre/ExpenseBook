@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Utils */
+.show {
+    display: block !important;
+}
+
+.hide {
+    display: none !important;
+}
+
+.overlay {
+    overflow: hidden !important;
+    height: 100svh;
+}
+
+.overlay::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #1f213abc;
+    z-index: 999;
+}
+
+/* Globals */
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+    height: -webkit-fill-available;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body {
+    line-height: 1.1;
+    font-family: "Poppins", sans-serif;
+    height: -webkit-fill-available;
+    background-color: #141625;
+}
+
+a,
+a:visited,
+a:checked {
+    text-decoration: none;
+}
+
+/* Typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #fff;
+}
+
+p {
+    color: #e4e5f8;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 700;
+}
+
+/* App */
+.circle {
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    background-color: #fff;
+    position: absolute;
+    top: calc((4rem / 2) - (2rem / 2));
+    left: calc((4rem / 2) - (2rem / 2));
+}
+
+.scrollbar::-webkit-scrollbar {
+    width: 0.5rem;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+    background: #1f213a;
+    border-radius: 03125rem;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+    transition: background-color 0s 600000s, color 0s 600000s !important;
+}

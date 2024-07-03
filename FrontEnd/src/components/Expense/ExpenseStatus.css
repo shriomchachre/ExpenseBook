@@ -1,0 +1,21 @@
+.expense-status {
+    border-radius: 0.5rem;
+    font-weight: 500;
+    padding: 0.75rem 1.5rem;
+    width: 7.5rem;
+}
+
+.expense-status li {
+    list-style: disc;
+    margin-left: 1.125rem;
+}
+
+.expense-status.paid {
+    color: #2fd9a3;
+    background: #2fd9a358;
+}
+
+.expense-status.pending {
+    color: #fe8e05;
+    background: #fe8e0559;
+}

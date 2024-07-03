@@ -1,0 +1,90 @@
+.dropdown-menu {
+    background: #1f213a;
+    height: 3.125rem;
+    width: 100%;
+    padding-inline: 0.75rem;
+}
+
+.dropdown-menu:hover {
+    cursor: pointer;
+}
+
+.dropdown-menu > p {
+    font-size: 0.875rem;
+}
+
+.dropdown-menu > img {
+    height: 0.875rem;
+}
+
+.rotate-upwards {
+    animation: rotate-upwards 250ms forwards;
+}
+
+@keyframes rotate-upwards {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(180deg);
+    }
+}
+
+.rotate-downwards {
+    animation: rotate-downwards 250ms forwards;
+}
+
+@keyframes rotate-downwards {
+    from {
+        transform: rotate(180deg);
+    }
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+.options-container {
+    width: 100%;
+    background: #1f213a;
+    position: absolute;
+    top: 3.4375rem;
+    border-radius: 0.5rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+        rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+.option {
+    height: 3.125rem;
+    width: 100%;
+    padding: 0.375rem;
+    font-size: 0.875rem;
+    position: relative;
+}
+
+.option:first-child {
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+
+.option:last-child {
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+
+.option:hover {
+    cursor: pointer;
+}
+
+.option > p {
+    padding-inline: 0.375rem;
+}
+
+.option.selected::before {
+    content: "";
+    height: 80%;
+    width: 0.375rem;
+    left: 0;
+    border-radius: 0.125rem;
+    position: absolute;
+    background-color: #7c5df9;
+}

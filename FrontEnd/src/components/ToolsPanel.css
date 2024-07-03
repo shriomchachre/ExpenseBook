@@ -1,0 +1,18 @@
+.search-filter-actions-pannel {
+    padding: 0.75rem;
+    position: sticky;
+    top: 0;
+    background-color: #141625;
+}
+
+.search-bar-and-add-btn-container,
+.sort-and-filter-container {
+    margin: 0.5rem 0;
+}
+
+/* width >= 768px */
+@media screen and (min-width: 768px) {
+    .search-filter-actions-pannel {
+        padding-top: 3.75rem;
+    }
+}
